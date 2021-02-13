@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Assignment 2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar" style="width: 0px;">
+        <nav class="notesMenu" style="width: 0px;">
+            <h1 class="closeMenu">✖</h1>
+
+            <h2>Notes</h2>
+            <div class="savedNotes">
+
+              <ul class="notesList">
+                <li>
+
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+      
+
+      <div class="main">
+        <h1 class="openMenu">►</h1>
+
+        <button id="newNote">new note</button>
+        <div class="createNotes">
+
+          <textarea id="txt" placeholder="type new note"></textarea>
+
+          <div class="saveCnl">
+            <button id="save">save</button>
+
+            <button id="cancel">clear</button>
+
+          </div>
+          
+
+        </div>
+        
+        <div class="displayNote"><p></p></div>
+
+        <button id="darkBtn">🌓</button>
+
+      </div>
+    </div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>

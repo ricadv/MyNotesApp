@@ -1,0 +1,181 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+
+html {
+  box-sizing: border-box;
+  color: black;
+}
+
+
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 300px auto;
+  grid-template-areas:
+  "sidebar main";
+}
+
+
+.main {
+  display: grid;
+  grid-area: main;
+  background-color: wheat;
+  padding-top: 20px;
+  transition: 0.5s;
+  grid-template-columns: 150px 100px auto 300px 100px;
+  grid-template-rows: 100px 200px 200px 200px;
+  grid-template-areas:
+  "main main main main main"
+  "main main main main main"
+  "main main main main main"
+  "main main main main main";
+
+}
+
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 100px auto 200px;
+  grid-template-areas:
+  "side"
+  "side"
+  "side";
+}
+
+.notesMenu {
+  grid-area: side;
+  background-color: lightslategray;
+  padding-top: 20px;
+  transition: 0.5s;
+  color: black;
+  text-align: center;
+}
+
+
+h2 {
+   margin-top: 50px;
+}
+
+
+li {
+  padding-bottom: 15px;
+}
+
+
+.closeMenu {
+  padding-top: 10px;
+}
+
+
+.openMenu {
+  padding: 10px;
+}
+
+
+.createNotes {
+  display: none;
+  padding: 0px 20px 20px 20px;
+}
+
+
+p {
+  padding: 100px;
+  text-align: left;
+  margin-top: 100px;
+  grid-column: 3/5;
+  grid-row: 2/4;
+}
+
+
+#newNote {
+  background-color: seagreen;
+  width: 100px;
+  height:50px;
+  border: none;
+  border-radius: 8px;
+  color: #f6fafb;
+  font-size: 1em;
+  font-size: 1em;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+
+#darkBtn {
+  background: #181331;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  color: #f6fafb;
+  grid-column: 5/6;
+  grid-row: 1/2;
+}
+
+
+#save, #cancel {
+  border: none;
+  border-radius: 8px;
+  color: #f6fafb;
+  padding: 15px 20px;
+  font-size: 1em;
+}
+
+
+#txt {
+  resize: yes;
+  outline: none;
+  border: none;
+  width:500px;
+  height: 500px;
+  border-radius: 8px;
+  padding: 20px 20px;
+  background:white;
+  color: black;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  
+}
+
+
+#save {
+  background-color: seagreen;
+}
+  
+
+.saveCnl {
+  margin-left: 350px;
+  float: left;
+  padding-top: 20px;
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+  
+
+#cancel {
+  background-color: darkred;
+}
+
+
+#darkBtn.darkTheme-dark {
+  background-color: white;
+}
+
+
+.darkTheme {
+  background: #100d20;
+  color: white;
+  transition: 0.5s;
+}
+
+
+.darkTheme-sidebar {
+  background:#251947;
+  color:white;
+}
